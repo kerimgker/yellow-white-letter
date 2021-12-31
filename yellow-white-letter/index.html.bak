@@ -1,0 +1,21 @@
+<html>
+
+<input type="text" id="yazi"> <input type="submit" onClick="yaz()"><br>
+<p id="resim"></p>
+
+</html>
+
+<script>
+
+function yaz(){
+var yazi = document.getElementById("yazi").value;
+for (var i = 0; i < yazi.length; i++) {
+  <!-- alert(yazi.charAt(i)); -->
+  document.getElementById("resim").innerHTML += "<img src='"+yazi.charAt(i).replace(' ','')+".png'>"
+  
+}
+}
+
+
+
+</script>
